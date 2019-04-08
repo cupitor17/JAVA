@@ -25,16 +25,16 @@ public class Cat {
 
 	public static void main(String[] args) {
 		for (int i = 1; i <= 5; i++) {
-			Cat habib = new Cat("Õàáèá");
-			Cat conor = new Cat("Êîíîð");
-			System.out.println("Áîé " + i + ": " + habib.name + " vs " + conor.name);
-			System.out.println("Îáùàÿ ñèëà " + habib.name + ": " + habib.getPower());
-			System.out.println("Îáùàÿ ñèëà " + conor.name + ": " + conor.getPower());
-			if (habib.fight(conor)) System.out.println("Ïîáåæäàåò: " + habib.name);
-			else System.out.println("Ïðîèãðûâàåò: " + habib.name);
+			Cat habib = new Cat("Ð¥Ð°Ð±Ð¸Ð±");
+			Cat conor = new Cat("ÐšÐ¾Ð½Ð¾Ñ€");
+			System.out.println("Ð‘Ð¾Ð¹ " + i + ": " + habib.name + " vs " + conor.name);
+			System.out.println("ÐžÐ±Ñ‰Ð°Ñ ÑÐ¸Ð»Ð° " + habib.name + ": " + habib.getPower());
+			System.out.println("ÐžÐ±Ñ‰Ð°Ñ ÑÐ¸Ð»Ð° " + conor.name + ": " + conor.getPower());
+			if (habib.fight(conor)) System.out.println("ÐŸÐ¾Ð±ÐµÐ¶Ð´Ð°ÐµÑ‚: " + habib.name);
+			else System.out.println("ÐŸÑ€Ð¾Ð¸Ð³Ñ€Ñ‹Ð²Ð°ÐµÑ‚: " + habib.name);
 
-			if (conor.fight(habib)) System.out.println("Ïîáåæäàåò: " + conor.name);
-			else System.out.println("Ïðîèãðûâàåò: " + conor.name);
+			if (conor.fight(habib)) System.out.println("ÐŸÐ¾Ð±ÐµÐ¶Ð´Ð°ÐµÑ‚: " + conor.name);
+			else System.out.println("ÐŸÑ€Ð¾Ð¸Ð³Ñ€Ñ‹Ð²Ð°ÐµÑ‚: " + conor.name);
 			System.out.println();
 		}
 	}

@@ -4,25 +4,44 @@ public class Cat {
 	int strength;
 	String name;
 
+	/**
+	Конструктор класса, принимает один параметр - имя кота
+	@param name: Имя котана
+	*/
 	public Cat(String name) {
+		// this указывает на создаваемый образец класса
+		// можно писать и без него, но так понятнее откуда что берется
 		this.weight	= this.randomInt();
 		this.age = this.randomInt();
 		this.strength = this.randomInt();
 		this.name = name;
 	}
 
+	/**
+	Генерирует случайное целое число от 0 до 10
+	*/
 	private int randomInt() {
 		return (int) (Math.random() * 10);
 	}
 
+	/**
+	Определяет какой кот сильнее. Если текущий кот (this)
+	сильнее возвращает true иначе false
+	*/
 	public boolean fight(Cat anotherCat) {
 		return this.getPower() > anotherCat.getPower();
 	}
 
+	/**
+	Возвращает силу котана равную сумме его веса, силы и возраста
+	*/
 	public int getPower() {
 		return this.weight + this.age + this.strength;
 	}
 
+	/**
+	Создает 5 раз два экземпляра класса Cat и проверяет кто победит
+	*/
 	public static void main(String[] args) {
 		for (int i = 1; i <= 5; i++) {
 			Cat habib = new Cat("Хабиб");
